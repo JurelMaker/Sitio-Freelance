@@ -5,6 +5,9 @@
     --secundario:#0097a7;
     --gris:#757575;
 
+    /*FUENTES*/ 
+    --cuerpo: "Lato", sans-serif;
+    --titullo: "Roboto Mono", monospace;
 }
 
 
@@ -14,13 +17,52 @@ html {
 
 body {
     font-size: 16px; /* 1rem = 10px */
+    font-family: var(--cuerpo);
 }
 
 .titulo {
     text-align: center;
     font-size: 3.8rem;
+    font-family: var(--titullo);
 }
 
 .titulo span{
     font-size: 2rem;
 }
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto; /*margin o padding: arriba derecha abajo izquierda*/
+    /* margin o padding: abajo/arriba derecha/izquierda*/
+}
+
+.nav-background{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.nav-background a:hover{
+    color: var(--oscuro);
+    background-color: var(--primario);
+}
+
+@media (min-width: 768px) {
+   .navegacion-principal {
+    flex-direction: row;
+   }
+}
+
+
+
