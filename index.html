@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Libreria para restablecer los estilos de los navegadaores-->
-    <link rel="preload" href="css/normalize.css" as="style">  <!--Ayuda cargar los estilos más rapdios-->
+    <link rel="preload" href="css/normalize.css" as="style"> <!--Ayuda cargar los estilos más rapdios-->
     <link rel="stylesheet" href="css/normalize.css">
 
     <!--Fuentes de Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-   
-    <link rel="preload" href="css/style.css" as="style">  <!--Ayuda cargar los estilos más rapdios-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style"> <!--Ayuda cargar los estilos más rapdios-->
     <link rel="stylesheet" href="css/style.css">
     <title>Sitio Web Freelance</title>
 </head>
@@ -32,31 +34,41 @@
             <a href="#">Contacto</a>
         </nav>
     </div>
-    
 
-    <img src="img/fondo.webp" alt="imagen_fondo">
+    <section class="hero">
+        <div class="contenido-hero">
+            <h2>Jorge Hernandez Freelancer</h2>
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                    stroke="#FFC107" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <p>Xalapa,Veracruz</p>
+            </div>
 
-    <section>
-        <h2>Jorge Hernandez Freelancer</h2>
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFC107"
-            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-            class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-        </svg>
-        <p>Xalapa,Veracruz</p>
-        <a href="#">contactar</a>
+            <a class="boton" href="#">contactar</a>
+        </div>
+
     </section>
 
 
 
-    <main>
+    <main class="contenedor sombra">
 
         <h2>Mis servicios</h2>
 
-        <section>
+        <div class="servicios">
+
+       
+
+        <section class="servicio">
             <h3>Diseño Web</h3>
+            <div class="iconos">
+
+            
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-palette">
@@ -67,12 +79,16 @@
                 <path d="M12.5 7.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
                 <path d="M16.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
             </svg>
+        </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora laboriosam odit dolores.
                 Perferendis quod assumenda praesentium!</p>
         </section>
 
-        <section>
+        <section class="servicio">
             <h3>Aplicaciones Web</h3>
+            <div class="iconos">
+
+            
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-brand-android">
@@ -93,12 +109,15 @@
                     d="M8.286 7.008c-3.216 0 -4.286 3.23 -4.286 5.92c0 3.229 2.143 8.072 4.286 8.072c1.165 -.05 1.799 -.538 3.214 -.538c1.406 0 1.607 .538 3.214 .538s4.286 -3.229 4.286 -5.381c-.03 -.011 -2.649 -.434 -2.679 -3.23c-.02 -2.335 2.589 -3.179 2.679 -3.228c-1.096 -1.606 -3.162 -2.113 -3.75 -2.153c-1.535 -.12 -3.032 1.077 -3.75 1.077c-.729 0 -2.036 -1.077 -3.214 -1.077z" />
                 <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" />
             </svg>
+
+        </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora laboriosam odit dolores.
                 Perferendis quod assumenda praesentium!</p>
         </section>
 
-        <section>
+        <section class="servicio">
             <h3>E-Commerce</h3>
+            <div class="iconos">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
                 class="icon icon-tabler icons-tabler-outline icon-tabler-credit-card">
@@ -108,47 +127,51 @@
                 <path d="M7 15l.01 0" />
                 <path d="M11 15l2 0" />
             </svg>
+
+        </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit tempora laboriosam odit dolores.
                 Perferendis quod assumenda praesentium!</p>
         </section>
-
-    </main>
+    </div>
+   
 
     <section>
         <h2>Contacto</h2>
-        <form action="">
+        <form class="formulario">
             <fieldset> <!--Agrupa los elementos del formulario-->
                 <legend>Contáctanos llenando todso los campos</legend>
                 <!--Etiqueta para poner un texto dentro del formualrio-->
 
-                <div>
+                <div class="contenedor-campos">
+                <div class="campo">
                     <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Nombre">
+                    <input class="input-text" type="text" placeholder="Nombre">
                 </div>
 
-                <div>
+                <div class="campo">
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" placeholder="teléfono">
+                    <input class="input-text" type="tel" placeholder="teléfono">
                 </div>
 
-                <div>
+                <div class="campo">
                     <label for="correo">Correo</label>
-                    <input type="email" name="" id="correo">
+                    <input class="input-text" type="email" name="" id="correo">
                 </div>
 
-                <div>
+                <div class="campo">
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="" id=""></textarea>
+                    <textarea class="input-text" name="" id=""></textarea>
                 </div>
 
-                <div>
-                    <input type="submit" value="Enviar">
+            </div>
+                <div class="enviar">
+                    <input class="boton" type="submit" value="Enviar">
                 </div>
 
             </fieldset>
         </form>
     </section>
-
+</main>
 
     <footer>
         <p>Todos los derechos reservados. Jorge Hernandez Freelancer</p>
